@@ -36,8 +36,6 @@
                 <form class="d-flex ms-0" role="search">
                     <input class="form-control me-1" type="search" placeholder="Pesquisar" aria-label="Pesquisar" style="width: 400px;">
                     <button class="btn btn-outline-success ms-0" type="submit">Pesquisar</button>
-                    <button class="btn btn-outline-primary ms-3" type="button" onclick="window.location.href='TelaLogin.php'">Login</button>
-                    <button class="btn btn-outline-secondary ms-2" type="button" onclick="window.location.href='TelaRegistrarse.php'">Criar Conta</button>
                 </form>
             </div>
         </div>
@@ -88,7 +86,7 @@
                         <p class="fw-bold">Dom Casmurro</p>
                         <p class="text-muted">R$ 50,00</p>
                         <div class="d-flex justify-content-center mt-4">
-                            <a href="TelaLogin.php" class="btn btn-outline-warning" role="button">Adicionar</a>
+                            <a href="" class="btn btn-outline-warning" role="button">Adicionar</a>
                         </div>
                     </div>
                 </div>
@@ -100,7 +98,7 @@
                         <p class="fw-bold">Steve Jobs</p>
                         <p class="text-muted">R$ 60,00</p>
                         <div class="d-flex justify-content-center mt-4">
-                            <a href="TelaLogin.php" class="btn btn-outline-warning" role="button">Adicionar</a>
+                            <a href="" class="btn btn-outline-warning" role="button">Adicionar</a>
                         </div>
                     </div>
                 </div>
@@ -112,7 +110,7 @@
                         <p class="fw-bold">A Metamorfose</p>
                         <p class="text-muted">R$ 70,00</p>
                         <div class="d-flex justify-content-center mt-4">
-                            <a href="TelaLogin.php" class="btn btn-outline-warning" role="button">Adicionar</a>
+                            <a href="" class="btn btn-outline-warning" role="button">Adicionar</a>
                         </div>
                     </div>
                 </div>
@@ -127,7 +125,7 @@
                         <p class="fw-bold">O hospital - Com brinde</p>
                         <p class="text-muted">R$ 59,90</p>
                         <div class="d-flex justify-content-center mt-4">
-                            <a href="TelaLogin.php" class="btn btn-outline-warning" role="button">Adicionar</a>
+                            <a href="" class="btn btn-outline-warning" role="button">Adicionar</a>
                         </div>
                     </div>
                 </div>
@@ -139,7 +137,7 @@
                         <p class="fw-bold">Nunca Minta</p>
                         <p class="text-muted">R$ 80,00</p>
                         <div class="d-flex justify-content-center mt-4">
-                            <a href="TelaLogin.php" class="btn btn-outline-warning" role="button">Adicionar</a>
+                            <a href="" class="btn btn-outline-warning" role="button">Adicionar</a>
                         </div>
                     </div>
                 </div>
@@ -151,7 +149,7 @@
                         <p class="fw-bold">Uma Vida Bela</p>
                         <p class="text-muted">R$ 65,00</p>
                         <div class="d-flex justify-content-center mt-4">
-                            <a href="TelaLogin.php" class="btn btn-outline-warning" role="button">Adicionar</a>
+                            <a href="" class="btn btn-outline-warning" role="button">Adicionar</a>
                         </div>
                     </div>
                 </div>
@@ -162,7 +160,7 @@
                         <p class="fw-bold">Tempo de Reanceder as Estrelas</p>
                         <p class="text-muted">R$ 12,00</p>
                         <div class="d-flex justify-content-center mt-4">
-                            <a href="TelaLogin.php" class="btn btn-outline-warning" role="button">Adicionar</a>
+                            <a href="" class="btn btn-outline-warning" role="button">Adicionar</a>
                         </div>
                     </div>
                 </div>
@@ -173,7 +171,7 @@
                         <p class="fw-bold">As Pequenas Alegrias</p>
                         <p class="text-muted">R$ 20,00</p>
                         <div class="d-flex justify-content-center mt-4">
-                            <a href="TelaLogin.php" class="btn btn-outline-warning" role="button">Adicionar</a>
+                            <a href="" class="btn btn-outline-warning" role="button">Adicionar</a>
                         </div>
                     </div>
                 </div>
@@ -184,7 +182,7 @@
                         <p class="fw-bold">Oque Resta de Nós</p>
                         <p class="text-muted">R$ 25,00</p>
                         <div class="d-flex justify-content-center mt-4">
-                            <a href="TelaLogin.php" class="btn btn-outline-warning" role="button">Adicionar</a>
+                            <a href="" class="btn btn-outline-warning" role="button">Adicionar</a>
                         </div>
                     </div>
                 </div>
@@ -195,7 +193,7 @@
                         <p class="fw-bold">O Príncipe</p>
                         <p class="text-muted">R$ 90,00</p>
                         <div class="d-flex justify-content-center mt-4">
-                            <a href="TelaLogin.php" class="btn btn-outline-warning" role="button">Adicionar</a>
+                            <a href="" class="btn btn-outline-warning" role="button">Adicionar</a>
                         </div>
                     </div>
                 </div>
@@ -206,7 +204,7 @@
                         <p class="fw-bold">Elantris</p>
                         <p class="text-muted">R$ 75,00</p>
                         <div class="d-flex justify-content-center mt-4">
-                            <a href="TelaLogin.php" class="btn btn-outline-warning" role="button">Adicionar</a>
+                            <a href="" class="btn btn-outline-warning" role="button">Adicionar</a>
                         </div>
                     </div>
                 </div>
@@ -217,7 +215,7 @@
                         <p class="fw-bold">O Hobbit</p>
                         <p class="text-muted">R$ 120,00</p>
                         <div class="d-flex justify-content-center mt-4">
-                            <a href="TelaLogin.php" class="btn btn-outline-warning" role="button">Adicionar</a>
+                            <a href="" class="btn btn-outline-warning" role="button">Adicionar</a>
                         </div>
                     </div>
                 </div>

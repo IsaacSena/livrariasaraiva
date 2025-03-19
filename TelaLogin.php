@@ -47,22 +47,73 @@
       <h2>Login</h2>
       <form>
           <label for="username">Login:</label>
-          <input type="text" id="username" name="username" placeholder="Digite seu login" required>
+          <input type="text" id="username" name="login" placeholder="Digite seu login" required>
   
           <label for="password">Senha:</label>
-          <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+          <input type="password" id="password" name="senha" placeholder="Digite sua senha" required>
   
           <div class="remember-me">
               <input type="checkbox" id="remember" name="remember">
               <label for="remember">Lembrar-se de mim</label>
           </div>
-  
           <button type="submit" class="login-btn">Logar</button>
-  
+          <!--<a href="TelaLogado.php" button type="submit" class="login-btn" style = "text-align: center;">Logar</a>-->
           <div class="create-account">
               <p>Não tem conta? <a href="TelaRegistrarse.php">Criar conta</a></p>
           </div>
       </form>
   </div>
+  <br><br>
+
+  <footer class="text-center text-lg-start text-muted" style="background-color: #D3D3D3; width: 100%;">
+
+  
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <a href="main.php"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Saraiva_logo.svg/2560px-Saraiva_logo.svg.png"  alt="Logo da Empresa" style="max-width: 100px; height: auto; margin-bottom: 22px;">
+          <p></a>
+            Loja especializada em venda de livros
+            Av.Senador Vergueiro - 400  São Bernardo do Campo - SP
+            Email:senacsbcsp@hotmail.com
+            © 2025,Saraiva - HTML E-commerce Template
+            Todos os direitos reservados
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Conta
+          </h6>
+          <p>
+            <a href="TelaLogin.php" class="text-reset">Login</a>
+          </p>
+          <p>
+            <a href="TelaRegistrarse.php" class="text-reset">Criar Conta</a>
+          </p>
+          <p>
+            <a href="TelaLogado.php" class="text-reset">Meu Carrinho</a>
+          </p>
+        </div>
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            Livros
+          </h6>
+          <p>
+            <a href="Livros.php" class="text-reset">Todos os Livros</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</footer>
+<!-- Footer -->
 </body>
 </html>

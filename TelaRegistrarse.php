@@ -1,3 +1,16 @@
+<?php 
+    namespace PHP\Modelo\Telas;
+    require_once('DAO/Conexao.php');
+    require_once('DAO/Inserir.php');
+   
+ 
+    use PHP\Modelo\DAO\Inserir;
+    use PHP\Modelo\DAO\Conexao;
+
+    $conexao = new Conexao();//acessa a classe conexao
+    $inserir = new Inserir();//Inserir 
+  ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -46,15 +59,15 @@
     <!-- Formulário de Registro -->
     <div class="login-container">
         <h2>Criar Conta</h2>
-        <form>
+        <form method= "POST" >
             <label for="name">Nome completo:</label>
-            <input type="text" id="name" name="name" placeholder="Digite seu nome completo" required>
+            <input type="text" id="name" name="nome" placeholder="Digite seu nome completo" required>
 
             <label for="address">Endereço:</label>
-            <input type="text" id="address" name="address" placeholder="Digite seu endereço" required>
+            <input type="text" id="address" name="endereco" placeholder="Digite seu endereço" required>
 
             <label for="phone">Telefone:</label>
-            <input type="text" id="phone" name="phone" placeholder="Digite seu telefone" required>
+            <input type="text" id="phone" name="telefone" placeholder="Digite seu telefone" required>
 
             <label for="dob">Data de Nascimento:</label>
             <input type="text" id="data" name="dataNascimento" placeholder="Digite sua data de nascimento" required>
@@ -63,15 +76,96 @@
             <input type="text" id="login" name="login" placeholder="Digite seu login" required>
 
             <label for="password">Senha:</label>
-            <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+            <input type="password" id="password" name="senha" placeholder="Digite sua senha" required>
 
-            <button type="submit" class="login-btn">Registrar</button>
+            <button type="submit" class="login-btn">Registrar
+
+            <?php 
+              if (isset($_POST['nome'])&& $_POST['nome'] != ""){
+                try {
+                  $nome = $_POST['nome'];
+                  $endereco = $_POST['endereco'];
+                  $telefone = $_POST['telefone'];
+                  $dataNascimento = $_POST['dataNascimento'];
+                  $login = $_POST['login'];
+                  $senha = $_POST['senha'];
+                  
+                  $inserir->cadastrarCliente($conexao, $nome, $endereco, $telefone, $dataNascimento, $login, $senha);
+          
+                } catch (Except $erro) {
+                  echo "Algo deu errado!<br><br>$erro";
+                }
+            
+              }
+    
+    
+              ?>
+            </button>
 
             <div class="create-account">
                 <p>Já tem uma conta? <a href="TelaLogin.php">Faça login</a></p>
             </div>
         </form>
     </div>
+
+
+    
+
+
+
+
+    <br>
+
+    <footer class="text-center text-lg-start text-muted" style="background-color: #D3D3D3; width: 100%;">
+
+  
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <a href="main.php"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Saraiva_logo.svg/2560px-Saraiva_logo.svg.png"  alt="Logo da Empresa" style="max-width: 100px; height: auto; margin-bottom: 22px;">
+          <p></a>
+            Loja especializada em venda de livros
+            Av.Senador Vergueiro - 400  São Bernardo do Campo - SP
+            Email:senacsbcsp@hotmail.com
+            © 2025,Saraiva - HTML E-commerce Template
+            Todos os direitos reservados
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Conta
+          </h6>
+          <p>
+            <a href="TelaLogin.php" class="text-reset">Login</a>
+          </p>
+          <p>
+            <a href="TelaRegistrarse.php" class="text-reset">Criar Conta</a>
+          </p>
+          <p>
+            <a href="" class="text-reset">Meu Carrinho</a>
+          </p>
+        </div>
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            Livros
+          </h6>
+          <p>
+            <a href="Livros.php" class="text-reset">Todos os Livros</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</footer>
+<!-- Footer -->
 
 </body>
 </html>

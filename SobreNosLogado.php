@@ -64,7 +64,7 @@
      <!-- Navbar -->
      <nav class="navbar navbar-expand-lg bg-white py-3 fixed-top">
     <div class="container-fluid">
-        <a class="navbar-brand" href="main.php">
+        <a class="navbar-brand" href="TelaLogado.php">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Saraiva_logo.svg/2560px-Saraiva_logo.svg.png" alt="Logo" style="width: 250px; height: auto;">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -73,20 +73,18 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="main.php">Home</a>
+                    <a class="nav-link active" aria-current="page" href="TelaLogado.php">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Livros.php">Livros</a>
+                    <a class="nav-link" href="LivrosLogado.php">Livros</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="SobreNos.php">Sobre-nós</a>
+                    <a class="nav-link" href="SobreNosLogado.php">Sobre-nós</a>
                 </li>
             </ul>
             <form class="d-flex ms-0" role="search">
                 <input class="form-control me-1" type="search" placeholder="Pesquisar" aria-label="Pesquisar" style="width: 400px;">
                 <button class="btn btn-outline-success ms-0" type="submit">Pesquisar</button>
-                <button class="btn btn-outline-primary ms-3" type="button" onclick="window.location.href='TelaLogin.php'">Login</button>
-                <button class="btn btn-outline-secondary ms-2" type="button" onclick="window.location.href='TelaRegistrarse.php'">Criar Conta</button>
             </form>
         </div>
     </div>
@@ -138,7 +136,7 @@
         <!-- Grid column -->
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           <!-- Content -->
-          <a href="main.php"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Saraiva_logo.svg/2560px-Saraiva_logo.svg.png"  alt="Logo da Empresa" style="max-width: 100px; height: auto; margin-bottom: 22px;">
+          <a href="TelaLogado.php"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Saraiva_logo.svg/2560px-Saraiva_logo.svg.png"  alt="Logo da Empresa" style="max-width: 100px; height: auto; margin-bottom: 22px;">
           <p></a>
             Loja especializada em venda de livros
             Av.Senador Vergueiro - 400  São Bernardo do Campo - SP
@@ -170,7 +168,7 @@
             Livros
           </h6>
           <p>
-            <a href="Livros.php" class="text-reset">Todos os Livros</a>
+            <a href="LivrosLogado.php" class="text-reset">Todos os Livros</a>
           </p>
         </div>
       </div>
