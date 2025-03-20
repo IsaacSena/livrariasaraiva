@@ -1,6 +1,6 @@
-create database sistemalivros;
+create database saraiva;
 
-use sistemalivros;
+use saraiva;
 
 create table cliente(
 idCliente int not null auto_increment primary key,
@@ -23,6 +23,7 @@ create table pedido(
 idPedido int not null auto_increment primary key,
 codigoCliente int not null,
 codigoLivros int not null,
+precoTotal decimal(10,2)not null,
 pagamento varchar(30)not null
 )engine = innoDB;
 
@@ -31,3 +32,7 @@ foreign key (codigoLivros) references livros(idLivros);
 
 alter table pedido add constraint codigoCliente
 foreign key (codigoCliente) references cliente(idCliente);
+
+select * from cliente;
+select * from livros;
+select * from pedido;

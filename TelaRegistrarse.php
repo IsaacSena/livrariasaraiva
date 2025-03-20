@@ -1,5 +1,5 @@
 <?php 
-    namespace PHP\Modelo\Telas;
+    namespace PHP\Modelo;
     require_once('DAO/Conexao.php');
     require_once('DAO/Inserir.php');
    
@@ -73,7 +73,7 @@
             <input type="text" id="data" name="dataNascimento" placeholder="Digite sua data de nascimento" required>
 
             <label for="login">Login:</label>
-            <input type="text" id="login" name="login" placeholder="Digite seu login" required>
+            <input type="text" id="login" name="loginn" placeholder="Digite seu login" required>
 
             <label for="password">Senha:</label>
             <input type="password" id="password" name="senha" placeholder="Digite sua senha" required>
@@ -81,16 +81,16 @@
             <button type="submit" class="login-btn">Registrar
 
             <?php 
-              if (isset($_POST['nome'])&& $_POST['nome'] != ""){
+              if (isset($_POST['nome'])&& $_POST['nome'] != "" && isset($_POST['endereco'])&& $_POST['endereco'] != "" && isset($_POST['telefone'])&& $_POST['telefone'] != "" && isset($_POST['dataNascimento'])&& $_POST['dataNascimento'] != "" && isset($_POST['loginn'])&& $_POST['loginn'] != "" && isset($_POST['senha'])&& $_POST['senha'] != "") {
                 try {
                   $nome = $_POST['nome'];
                   $endereco = $_POST['endereco'];
                   $telefone = $_POST['telefone'];
                   $dataNascimento = $_POST['dataNascimento'];
-                  $login = $_POST['login'];
+                  $loginn = $_POST['loginn'];
                   $senha = $_POST['senha'];
                   
-                  $inserir->cadastrarCliente($conexao, $nome, $endereco, $telefone, $dataNascimento, $login, $senha);
+                  $inserir->cadastrarCliente($conexao, $nome, $endereco, $telefone, $dataNascimento, $loginn, $senha);
           
                 } catch (Except $erro) {
                   echo "Algo deu errado!<br><br>$erro";

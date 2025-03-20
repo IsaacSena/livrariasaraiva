@@ -1,3 +1,14 @@
+<?php 
+    namespace PHP\Modelo;
+    require_once('DAO/Conexao.php');
+    require_once('DAO/Consultar.php');
+    use PHP\Modelo\DAO\Consultar;
+    use PHP\Modelo\DAO\Conexao;
+
+    $conexao = new Conexao();
+    $consultar = new Consultar();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -45,9 +56,9 @@
 
     <div class="login-container">
       <h2>Login</h2>
-      <form>
+      <form method = "POST">
           <label for="username">Login:</label>
-          <input type="text" id="username" name="login" placeholder="Digite seu login" required>
+          <input type="text" id="username" name="loginn" placeholder="Digite seu login" required>
   
           <label for="password">Senha:</label>
           <input type="password" id="password" name="senha" placeholder="Digite sua senha" required>
@@ -56,7 +67,16 @@
               <input type="checkbox" id="remember" name="remember">
               <label for="remember">Lembrar-se de mim</label>
           </div>
-          <button type="submit" class="login-btn">Logar</button>
+          <button type="submit" class="login-btn">Logar
+
+          <?php
+          if ((isset($_POST['loginn'])&& $_POST['loginn'] != "" && $_POST['senha'] && $_POST['senha'] != "")) {
+             $consultar->consultarLogin($conexao,$_POST['loginn'],$_POST['senha']);
+          }
+         
+          ?>
+          </button>
+
           <!--<a href="TelaLogado.php" button type="submit" class="login-btn" style = "text-align: center;">Logar</a>-->
           <div class="create-account">
               <p>Não tem conta? <a href="TelaRegistrarse.php">Criar conta</a></p>

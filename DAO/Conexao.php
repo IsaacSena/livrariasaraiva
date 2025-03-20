@@ -4,9 +4,9 @@
     class Conexao{
         function conectar(){
             try {
-                $conn = mysqli_connect('localhost','root','','sistemalivros');
+                $conn = mysqli_connect('localhost','root','','saraiva');
                 if ($conn) {
-                    echo "<br>Conectado com sucesso!";
+                    
                     return $conn;
                 }
             }
